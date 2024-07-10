@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow: -moz-scrollbars-none;
+}
+
+
+#root::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+
