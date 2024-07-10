@@ -45,7 +45,7 @@ const Navbar = () => {
     <div className='bg-primary-bg px-large px-md px-md px-small px-md '>
       <nav className={`bg-primary-bg  text-white pt-5 py-4 transition-all duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className=" flex justify-between items-center">
-          <div className="text-xl md:text-xl font-semibold mb-4">ConsultCo</div>
+          <div className="text-xl md:text-xl font-semibold mb-4">Something IT</div>
           <div className="hidden md:flex space-x-4 items-center"> {/* Added items-center */}
             <a href="#" onClick={()=>scrollToSection('aboutId')} className="hover:text-primary-300">About</a>
             <a href="#" onClick={()=>scrollToSection('servicesId')} className="hover:text-primary-300">Services</a>
@@ -237,39 +237,13 @@ const Impact = () => (
 );
 
 const Prompt = () => {
-  const heroRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3, // Adjust threshold as needed
-      }
-    );
-
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
-
-    return () => {
-      if (heroRef.current) {
-        observer.unobserve(heroRef.current);
-      }
-    };
-  }, []);
+  
 
   return (
     <section className="bg-primary md:my-72 my-52 px-small   px-large ">
       <div className="">
-        <div className="grid grid-flow-row lg:grid-flow-col gap-16" ref={heroRef}>
-          <div className={`text-4xl md:text-7xl font-extrabold ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 transition duration-1000 ease-out'}`}>
+        <div className="grid grid-flow-row lg:grid-flow-col gap-16">
+          <div className={`text-4xl md:text-7xl font-extrabold `}>
             <div>
               From
             </div>
@@ -277,7 +251,7 @@ const Prompt = () => {
               Day One <span className='text-text-accent'>,</span>
             </div>
           </div>
-          <div className={`text-xl md:text-5xl font-medium ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 transition duration-1000 ease-out delay-200'}`}>
+          <div className={`text-xl md:text-5xl font-medium`}>
             Our clients have trusted us to create customized solutions to solve their biggest problems.
           </div>
         </div>
