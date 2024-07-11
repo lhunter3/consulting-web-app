@@ -3,7 +3,7 @@ const Prompt = () => {
   
 
     return (
-      <section className="bg-primary md:my-72 my-52 px-small   px-large ">
+      <section  className="bg-primary md:my-72 my-52 px-small   px-large ">
         <div className="">
           <div className="grid grid-flow-row lg:grid-flow-col gap-16">
             <div className={`text-4xl md:text-7xl font-extrabold `}>

@@ -4,14 +4,17 @@ import Navbar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import { features } from "../constants";
 import { scrollToSection } from "../utils/scrollToSection";
+import { HashLink as Link } from "react-router-hash-link";
+import ScrollToTop from "../utils/ScrollToTop";
 
 export function Services(){
 
     return(
         <>
+    <ScrollToTop />
+
         <Navbar/>
         <Hero/>
-        {/* <Prompt/> */}
         <Content/>
         <Footer/>
 
@@ -52,7 +55,7 @@ return(
 const Content = () => {
     return(
 
-        <section id='contenId' className="px-small px-large ">
+        <section id='contenId' className="mb-16 px-small px-large ">
             <div>
                 <ServiceShowcase/>
                 <CTA/>
@@ -64,7 +67,7 @@ const Content = () => {
 
 const ServiceItem = ({ icon, title, content, index }) => (
   <div className={`flex flex-row pt-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full flex justify-center items-center bg-primary-bg-hover`}>
+    <div className={`w-[64px] h-[64px] rounded-full flex justify-center items-center bg-primary-bg`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
@@ -85,7 +88,7 @@ const ServiceShowcase = () =>  (
         We will <span className="text-text-accent">Help</span>, <br className="sm:block hidden" /> with your IT needs.
       </h2>
       <p className={`font-normal max-w-[470px] mt-5`}>
-        We offer a wide range of services that will help you grow your business and reach your goals. 
+         
       </p>
 
       <button styles={`mt-10`} />
@@ -101,15 +104,16 @@ const ServiceShowcase = () =>  (
 
 
 const CTA = () => (
-  <div className='my-32 rounded-2xl shadow-2xl md:mt-32 mt-16 bg-primary-bg h-full hover:bg-primary-bg-hover '>
-    <div className="flex flex-col items-center text-center py-4">
-      <h2 className='text-4xl md:text-7xl font-extrabold text-white w-full'>Get in touch<span id='excl'className="">!</span></h2>
-      <p className='mt-5 max-w-[470px] text-white'>
-        We are here to help you with your IT needs. Contact us today to get started.
+  <div className='rounded-2xl shadow-2xl md:mt-32 mt-16 bg-primary-bg h-full hover:bg-primary-bg-hover '>
+    <Link to={'../#contact'} relative="path" className="flex flex-col items-center text-center py-4">
+      <h2 className='text-2xl md:text-5xl font-extrabold text-white w-full'><span id='excl'className="">Learn More</span></h2>
+      <p className='mt-2 max-w-[470px] text-white'>
+        Contact us today to get started.
       </p>
-    </div>
+    </Link>
 </div>
 );
+
 
 
 

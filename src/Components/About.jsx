@@ -32,9 +32,10 @@ const About = () => {
     }, []);
   
     return (
-      <div id='aboutId' ref={aboutRef} className={`md:mb-32 mb-24  bg-white pr-0 lg:pr-20 pb-0 lg:pb-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-4 ${!animationStarted ? 'opacity-0 translate-y-20 duration-100' : 'opacity-100 translate-y-0 duration-100'}`}>
-        <div className='h-40 md:h-60 lg:h-auto'>
+      <div ref={aboutRef} className={`md:mb-32 mb-24  bg-white pr-0 lg:pr-20 pb-0 lg:pb-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-4 ${!animationStarted ? 'opacity-0 translate-y-20 duration-100' : 'opacity-100 translate-y-0 duration-100'}`}>
+        <div  className='h-40 md:h-60 lg:h-auto'>
           <img 
+          
             src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
             className="w-full h-full object-cover lg:rounded-r-lg drop-shadow-lg"
             alt="People working together"
@@ -44,10 +45,10 @@ const About = () => {
         <div className='flex flex-col justify-center py-6 lg:py-10 px-small px-large'>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl leading-none font-semibold tracking-tight mb-4 text-primary-bg">About <span className='text-underline'>Us</span></h2>
           <p className="text-md md:text-2xl my-4">From strategy to digital product building and beyond, we bring the right mix of services to accelerate your vision with holistic, practical solutions. We listen deeply and share our knowledge every step of the way, empowering your teams to continue the momentum after we're gone.</p>
-          <button onClick={() => scrollToSection('servicesId')} className="relative overflow-hidden group bg-transparent text-text-accent px-4 py-2 rounded-lg max-w-max border border-text-accent hover:bg-text-accent hover:text-white hover:border-transparent transition duration-100 ease-in-out">
+          <Link to='/services' className="relative overflow-hidden group bg-transparent text-text-accent px-4 py-2 rounded-lg max-w-max border border-text-accent hover:bg-text-accent hover:text-white hover:border-transparent transition duration-100 ease-in-out">
             <span className="absolute inset-0 bg-text-accent opacity-0 group-hover:opacity-100 transition duration-100 ease-in-out"></span>
-            <Link to="/services"><span className="relative z-10">Explore our services</span></Link>
-          </button>
+            <span className="relative z-10">Explore our services</span>
+          </Link>
         </div>
       </div>
     );

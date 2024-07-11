@@ -51,7 +51,7 @@ const Contact = () => {
     };
   
     return (
-      <section id='contactId' className="md:py-32 py-14 bg-white">
+      <section id='contact' className="md:py-32 py-16 bg-white">
         <div className="max-w-5xl  px-small px-large ">
           <h2 className="text-5xl sm:text-6xl lg:text-7xl leading-none font-semibold tracking-tight mb-4 text-primary-bg ">Contact <span className='text-underline'>Us</span></h2>
           <form onSubmit={handleSubmit} className="space-y-4">

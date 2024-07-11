@@ -38,7 +38,7 @@ const Success = () => {
     ];
 
     return (
-        <section id="testimonialsId" className="px-small px-md  px-large bg-primary-bg md:py-32 py-14">
+        <section id="testimonials" className="px-small px-md  px-large bg-primary-bg md:py-32 py-14">
             <div className="">
                 <h2 className='text-5xl sm:text-6xl lg:text-7xl leading-none font-semibold tracking-tight  text-white'>
                 <span className='text-underline'>Success</span> Stories
