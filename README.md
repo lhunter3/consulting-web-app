@@ -1,8 +1,20 @@
-# React + Vite
+# IT Consulting Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Modern UI created using React.js & Tailwind CSS.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<video controls src="ScrollCapture 2024-07-11 at 16.59.21.mp4" title="Title"></video>
+
+## Responsive Layout
+
+### Landing Page
+|  Mobile   |   Desktop  |     
+|:---:|:---:|
+|![alt text](image-4.png) |![alt text](image-1.png)|
+
+###  Services Page
+|  Mobile   |   Desktop  |     
+|:---:|:---:|
+|![alt text](image-3.png) |![alt text](image-2.png)|
+
+
