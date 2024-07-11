@@ -28,7 +28,7 @@ const Testimonials = () => {
 
   // Testimonials data
   const testimonials = [
-    { text: "ConsultCo transformed our business strategy, leading to a 200% growth in just one year." },
+    { text: "Something IT transformed our business strategy, leading to a 200% growth in just one year." },
     { text: "Their financial consulting services helped us optimize our operations and increase profitability." },
     { text: "The digital transformation guidance we received was invaluable in modernizing our infrastructure." },
     { text: "The team's expertise in market analysis helped us identify new opportunities for expansion." },
