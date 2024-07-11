@@ -41,7 +41,7 @@ const Success = () => {
         <section id="testimonials" className="px-small px-md  px-large bg-primary-bg md:py-32 py-14">
             <div className="">
                 <h2 className='text-5xl sm:text-6xl lg:text-7xl leading-none font-semibold tracking-tight  text-white'>
-                <span className='text-underline'>Success</span> Stories
+                <span className='text-underline-static'>Success</span> Stories
                 </h2>
                 <p className="text-md md:text-2xl my-4 text-white">
                 View some of our recent projects and the impact we've had on our clients.
@@ -55,7 +55,7 @@ const Success = () => {
                             key={index} 
                             className="group relative h-[400px] lg:h-[500px] xl:h-[600px] [perspective:1000px] rounded-lg"
                         >
-                            <div className="absolute inset-0 w-full  transition-all duration-150 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] shadow-xl">
+                            <div className="absolute inset-0 w-full  transition-all duration-200 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] shadow-xl">
                                 {/* Front side */}
                                 <div className="absolute inset-0  [backface-visibility:hidden] flex flex-col bg-primary-bg-hover rounded-lg">
                                     <div className="md:h-1/2  h-1/4 ">

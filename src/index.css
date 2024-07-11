@@ -2,12 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.text-underline-static {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.text-underline-static::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 0.25rem;
+  background-image: linear-gradient(#118ad3 0%, #118ad3 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
 .text-underline {
-    background-image: linear-gradient(#118ad3 0%, #118ad3 100%);
-    background-position: 0 100%;
-    background-size: 95% 0.25rem;
-    background-repeat: repeat-x;
-    /* border-radius: 0.5rem */
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.text-underline::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  border-radius: 20px;
+  bottom: -0.25rem;
+  height: 0.25rem;
+  width: 100%;
+  background: linear-gradient(90deg, 
+  transparent 0%,
+  transparent 25%,
+  #118ad3 50%,
+  transparent 75%,
+  transparent 100%
+);
+  background-size: 200% 100%;
+  animation: shootingStar 3s linear infinite;
+}
+
+@keyframes shootingStar {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 .hero-height {
@@ -59,15 +108,27 @@ padding-right: 1.5rem /* 24px */;
 
 @keyframes slide-in {
     0% {
-      transform: translatex(-100%);
+      transform: translateY(10px);
       opacity: 0;
     }
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 1;
     }
   }
   
   .animate-slide-in {
-    animation: slide-in 0.5s forwards;
+    animation: slide-in 0.3s forwards;
+  }
+
+
+  .animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  }
+  
+  .animated-text.show {
+    opacity: 1;
+    transform: translateY(0);
   }

@@ -22,7 +22,7 @@ const WordScroll = () => {
   }, []);
 
   return (
-    <div className="words-wrapper overflow-hidden h-16 flex items-center">
+    <div id='promptId' className="words-wrapper overflow-hidden h-16 flex items-center">
       <div
         className="word-lines flex space-x-4"
         style={{ transform: `translateX(-${scrollPosition}px)` }}

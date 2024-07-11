@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-export function scrollToSection(sectionId, fallbackLink) {
+export function scrollToSection(sectionId) {
   var section = document.getElementById(sectionId);
   if (section) {
       // Calculate the offset of the section relative to the top of the page
@@ -13,11 +13,7 @@ export function scrollToSection(sectionId, fallbackLink) {
       });
       
       console.log('Scrolled to ' + sectionId);
-  } else {
-      // Section not found, redirect to the fallback link
-      window.location.href = fallbackLink;
-      console.log('Section not found, redirected to ' + fallbackLink);
-  }
+  } 
 };
 
 

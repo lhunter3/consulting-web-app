@@ -14,7 +14,7 @@ import ScrollToTop from '../utils/ScrollToTop';
 export function Landing() {
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <ScrollProgressBar />
       <Navbar />
       <Hero />
