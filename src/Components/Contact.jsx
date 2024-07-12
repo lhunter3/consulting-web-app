@@ -40,7 +40,7 @@ const Contact = () => {
   const inputClass = "w-full px-4 py-2 border rounded focus:ring-2 focus:ring-primary-400 focus:border-transparent placeholder-gray-400";
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-32 my-16">
+    <div id='contact' className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-32 my-16">
       <div className="flex flex-col lg:flex-row justify-between items-stretch">
         <div className="lg:w-[calc(50%-1px)] mb-8 lg:mb-0">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl leading-none font-semibold tracking-tight mb-4 text-primary-bg">

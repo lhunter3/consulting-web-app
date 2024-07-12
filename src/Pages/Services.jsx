@@ -140,7 +140,7 @@ const CTA = () => (
   <div className='rounded-2xl shadow-xl md:mt-16 mt-8 bg-primary-bg hover:bg-primary-bg-hover'>
   <div className="flex flex-col md:flex-row items-center justify-between p-6">
     <Link to={'../#contact'} relative="path" className="flex flex-col items-center text-center md:text-left md:items-start flex-grow pb-6 md:pb-0">
-      <h2 className='text-2xl md:text-5xl font-semibold text-white w-full'>
+      <h2 className='text-2xl md:text-4xl font-semibold text-white w-full'>
         <span id='excl'>Learn More</span>
       </h2>
       <p className='mt-2 max-w-[470px] text-white'>
@@ -150,7 +150,7 @@ const CTA = () => (
     <Link to='../#contact' className="relative overflow-hidden group bg-transparent text-white px-4 py-2 rounded-lg max-w-max border border-text-white hover:bg-text-accent hover:text-white hover:border-transparent transition duration-100 ease-in-out">
             <span className="absolute inset-0 bg-text-accent opacity-0 group-hover:opacity-100 transition duration-100 ease-in-out"></span>
             <span className="relative z-10">Get Started</span>
-          </Link>
+    </Link>
   </div>
 </div>
 );
