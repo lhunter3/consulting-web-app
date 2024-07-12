@@ -103,7 +103,7 @@ const Contact = () => {
         <div className="hidden lg:block  mx-32 w-1 rounded-xl bg-primary-bg opacity-15 shadow-xl self-stretch"></div>
         
         <div className="lg:w-[calc(50%-1px)] ">
-          <div className="bg-gray-100 rounded-lg h-full flex flex-col justify-center">
+          <div className="h-full flex flex-col justify-center">
             <h3 className="text-2xl font-semibold mb-4 flex items-center">
               <Phone className="mr-2" />Phone Us
             </h3>
