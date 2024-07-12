@@ -7,7 +7,7 @@ const Success = () => {
             img: 'https://d382vuhe6yd0tq.cloudfront.net/wp-content/uploads/2023/10/custom-website-development.webp',
             title: 'Digital Transformation Initiative',
             description: `
-                Spearheaded a comprehensive digital transformation initiative 
+                Led a comprehensive digital transformation initiative 
                 for a leading organization in the tourism sector. The project aimed to 
                 enhance their online presence and user engagement through innovative 
                 digital solutions.`,
@@ -53,15 +53,15 @@ const Success = () => {
                     {projects.map((project, index) => (
                         <div 
                             key={index} 
-                            className="group relative h-[400px] lg:h-[500px] xl:h-[600px] [perspective:1000px] rounded-lg"
+                            className="group relative h-[350px] lg:h-[400px] xl:h-[500px] [perspective:1000px] rounded-lg"
                         >
-                            <div className="absolute inset-0 w-full  transition-all duration-200 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] shadow-xl">
+                            <div className="absolute inset-0 w-full  transition-all ease-in-out duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] shadow-xl">
                                 {/* Front side */}
                                 <div className="absolute inset-0  [backface-visibility:hidden] flex flex-col bg-primary-bg-hover rounded-lg">
-                                    <div className="md:h-1/2  h-1/4 ">
+                                    <div className="md:h-1/2  h-2/5 ">
                                         <img src={project.img} alt={`Project ${index + 1}`} className="w-full h-full object-cover rounded-t-lg" />
                                     </div>
-                                    <div className="p-6 lg:p-8 flex flex-col justify-evenly h-1/2">
+                                    <div className="p-6 lg:p-8 flex flex-col justify-between">
                                         <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4 line-clamp-2 text-white">
                                             {project.title}
                                         </h3>

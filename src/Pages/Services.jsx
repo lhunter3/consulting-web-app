@@ -93,12 +93,12 @@ const Partners = () =>(
     <div id="features" className='md:mt-32 mt-16 flex md:flex-row flex-col'>
       <div className='flex-auto flex justify-center items-start flex-col'>
         <h2 className='text-4xl md:text-7xl leading-none font-semibold tracking-tight mb-4'>
-          Exponential<span className="text-text-accent"></span><br className="sm:block hidden" /> <span className="italic text-underline">Impact</span>.
+          Exponential<span className="text-text-accent"></span><br className="sm:block hidden" /> <span className="italic text-underline-static">Impact</span>.
         </h2>
       </div>
 
       <div className='flex-col md:pl-6 lg:pl-48 '>
-        <p className="text-md lg:text-2xl tracking-tight font-medium  ">
+        <p className="text-md lg:text-2xl tracking-tight font-medium">
           Together with leading and emerging technology partners, we innovate and co-create to deliver the best ideas and solutions for you.</p>
       </div>
 
@@ -137,18 +137,18 @@ const ServiceShowcase = () =>  (
 );
 
 const CTA = () => (
-  <div className='rounded-2xl shadow-xl md:mt-16 mt-8 bg-primary-bg hover:bg-primary-bg-hover'>
-  <div className="flex flex-col md:flex-row items-center justify-between p-6">
-    <Link to={'../#contact'} relative="path" className="flex flex-col items-center text-center md:text-left md:items-start flex-grow pb-6 md:pb-0">
-      <h2 className='text-2xl md:text-4xl font-semibold text-white w-full'>
+  <div className='rounded-lg md:rounded-2xl shadow-xl md:mt-16 mt-8 bg-primary-bg hover:bg-primary-bg-hover'>
+  <div className="flex flex-col md:flex-row items-center  p-6">
+    <Link to={'../#contact'} relative="path" className="flex flex-col items-center md:text-left md:items-start flex-grow pb-6 md:pb-0">
+      <h2 className='text-2xl md:text-4xl font-semibold text-center md:text-left text-white w-full'>
         <span id='excl'>Learn More</span>
       </h2>
-      <p className='mt-2 max-w-[470px] text-white'>
+      <p className='font-normal text-[16px] text-center md:text-left leading-[24px] text-white'>
         Contact us today to book a complimentary consultation.
       </p>
     </Link>
     <Link to='../#contact' className="relative overflow-hidden group bg-transparent text-white px-4 py-2 rounded-lg max-w-max border border-text-white hover:bg-text-accent hover:text-white hover:border-transparent transition duration-100 ease-in-out">
-            <span className="absolute inset-0 bg-text-accent opacity-0 group-hover:opacity-100 transition duration-100 ease-in-out"></span>
+            <span className="absolute  bg-text-accent opacity-0 group-hover:opacity-100 transition duration-100 ease-in-out"></span>
             <span className="relative z-10">Get Started</span>
     </Link>
   </div>
